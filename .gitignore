@@ -1,5 +1,5 @@
 # dependencies
-/node_modules
+**/node_modules
 
 # npm-shrinkwrap.json and yarn.lock are used to guarantee
 # the exact versions of your npm dependencies and are
