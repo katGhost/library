@@ -1,66 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="three-way">
-           <button class="menu-btn">
-            <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"
-                viewBox="0 0 34 24" xmlns="http://www.w3.org/2000/svg"><path d="m13 16.745c0-.414-.336-.75-.75-.75h-9.5c-.414 0-.75.336-.75.75s.336.75.75.75h9.5c.414 0 .75-.336.75-.75zm9-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm-4-5c0-.414-.336-.75-.75-.75h-14.5c-.414 0-.75.336-.75.75s.336.75.75.75h14.5c.414 0 .75-.336.75-.75z" fill-rule="nonzero"/></svg>
-           </button>
-        </div>
+      <div class="header">
         <div class="heading">
-           <h1 class="black">lib</h1>
-           <h1 class="coral">wizard</h1>
+          <h1 class="black">lib</h1>
+          <h1 class="teal">wizard</h1>
         </div>
         <div class="cart-container">
-           <button class="cart">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
-                <path d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm-10.563-5l-2.937-7h16.812l-1.977 7h-11.898zm11.233-5h-11.162l1.259 3h9.056l.847-3zm5.635-5l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z"/>
+          <button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+                >
+              <path
+                d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm-10.563-5l-2.937-7h16.812l-1.977 7h-11.898zm11.233-5h-11.162l1.259 3h9.056l.847-3zm5.635-5l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z"
+              />
             </svg>
-           </button>
-           <div class="cart-items">0</div>
+          </button>
+          <div class="cart-items">0</div>
         </div>
-     </header>
-     <!-- banner -->
-     <section class="the-section">
-        <div class="banner">
-           <h1 class="banner-title">top collection</h1>
-           <button class="banner-btn">explore</button>
-        </div>
-     </section>
-     <!-- end of banner -->
+      </div>
+      <!-- end of .header class-->
 
-     <!-- books section -->
-   <section class="items">
-    <div class="section-title">
-       <h2>our books</h2>
-    </div>
-    <div class="items-center">
-       <!-- only one book item, testing purposes -->
-       <article class="product">
+      <!-- navigation links -->
+     <div class="navigation">
+        <a class="link" href="http:/">home</a>
+        <a class="link" href="http:/">products</a>
+        <a class="link" href="http:/">register</a>
+        <a class="link" href="http:/">about us</a>
+     </div>
+      <!-- end of navigation links -->
+    </header>
+    <!-- banner -->
+    <section class="the-section">
+      <div class="banner">
+        <h1 class="banner-title">top collection</h1>
+        <button class="banner-btn">explore</button>
+      </div>
+    </section>
+    <!-- end of banner -->
+
+    <!-- books section -->
+    <section class="items">
+      <div class="section-title">
+        <h2>our books</h2>
+      </div>
+      <div class="items-center">
+        <!-- only one book item, testing purposes -->
+        <article class="product">
           <div class="img-container">
-             <img src="./images/lib03.jpg" alt="item-1" class="item-img">
-             <button class="cart-btn" data-id="1">
-                <i class="shopping-cart">
-                   <img src="./img/iconmonstr-shopping-cart-3.sv" alt="">
-                </i>
-                add to cart
-             </button>
+            <img
+              src="./images/lib03.jpg"
+              width="25%"
+              alt="item-1"
+              class="item-img"
+            />
+            <button class="cart-btn" data-id="1">
+              <i class="shopping-cart">
+                <img src="" alt="" />
+              </i>
+              add to cart
+            </button>
           </div>
           <h3>harry potter and the philosopher's stone</h3>
           <h4>$25.00</h4>
-       </article>
+        </article>
+      </div>
+    </section>
+    <!-- end of book section -->
+       <!-- cart -->
+   <div class="cart-overlay">
+    <div class="cart">
+       <button class="close-cart">
+          ✖
+       </button>
+       <h2>your cart</h2>
+       <div class="cart-content">
+          <!-- cart-item -->
+          <div class="cart-item">
+             <img src="./img/mark-champs-Id2IIl1jOB0-unsplash.jpg" alt="product" />
+             <div>
+                <h4>queen panel bed</h4>
+                <h5>R7499.99</h5>
+                <span class="remove-item">remove</span>
+             </div>
+             <div>
+                <i class="arrow-up"></i>
+                <p class="item-amount">1</p>
+                <i class="arrow-down"></i>
+             </div>
+          </div>
+       </div>
+       <div class="cart-footer">
+          <h3>your total : R <span
+              class="cart-total">0</span>
+          </h3>
+          <button class="clear-cart banner-btn">clear cart</button>
+       </div>
     </div>
- </section>
- <!-- end of book section -->
-
-
-</body>
+ </div>
+ <!-- end of the cart -->
+  </body>
 </html>

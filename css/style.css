@@ -2,48 +2,55 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  background: whitesmoke;
+  background: white;
   color: black;
+  text-decoration: none;
 }
 
 header {
-  background: rgb(231, 231, 231);
-  width: 100%;
-  height: 10vh;
+    width: 100%;
+    height: 20vh;
+    background: rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 25px;
+    overflow: hidden;
+    z-index: 1;
+    text-decoration: none;
+}
+
+.header {
+  background: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px;
-  position: sticky;
-  top: 0;
-  overflow: hidden;
-  z-index: 1;
 }
 
-header .heading {
+.header .heading {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-header .heading .black {
+.header .heading .black {
   color: black;
   font-size: 30px;
   font-weight: bold;
 }
 
-header .heading .coral {
+.header .heading .teal {
   color: #266b78;
   font-size: 30px;
   font-weight: lighter;
 }
 
-header .cart-container button,
-header .three-way button {
+.header .cart-container button{
   background: none;
   color: #266b78;
   border: none;
@@ -55,7 +62,7 @@ header .three-way button {
 
 .cart-items {
   position: absolute;
-  top: 8px;
+  top: 15px;
   right: 35px;
   background: #266b78;
   padding: 0 5px;
@@ -63,10 +70,23 @@ header .three-way button {
   color: white;
 }
 
+header .navigation {
+    background: transparent;
+    margin-top: 2%;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .navigation .link {
+    color: #266b78;
+}
+
 .the-section {
   background: url("../images/lib02.jpg") center/cover no-repeat;
   width: 100%;
-  min-height: calc(100vh - 10vh);
+  min-height: calc(100vh - 20vh);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,7 +154,7 @@ header .three-way button {
     position: absolute;
     top: 70%;
     right: 0;
-    background: coral;
+    background: #58c5cd;
     border: none;
     text-transform: uppercase;
     padding: 0.5rem 0.75rem;
@@ -242,6 +262,7 @@ header .three-way button {
  }
  
  /* cart item */
+ 
  .cart-item {
     display: grid;
     align-items: center;
@@ -276,6 +297,7 @@ header .three-way button {
     /* background: url(./img/); */
  }
  
+ 
  .arrow-up,
  .arrow-down {
     color: coral;
@@ -292,4 +314,3 @@ header .three-way button {
     text-transform: capitalize;
     margin-bottom: 1rem;
  }
- 
