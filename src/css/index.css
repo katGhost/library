@@ -84,7 +84,6 @@ header .heading .next {
   background: #d30fea;
 }
 
-
 header .navigation {
   background: transparent;
   margin-top: 3%;
@@ -103,28 +102,9 @@ header .navigation .link:hover {
   color: #eb2fff;
 }
 
-/*
-    STICKY HEADER/NAVBAR ONSCROLL
-*/
-.content {
-  padding: 16px;
+header {
+  box-shadow: 0 2px 4px 0 rgba(214, 31, 187, 0.3);
 }
-
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
-}
-
-/*
-    STICKY BAR
-*/
 /* End of the header*/
 
 /* The image banner section*/
@@ -188,10 +168,17 @@ header .navigation .link:hover {
 .section-title h2 {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   text-transform: capitalize;
   letter-spacing: 1px;
   color: #d30fea;
+}
+
+.section-title #disabled-btn {
+  background: #d30fea;
+  padding: 5px 20px;
+  border-radius: 15px;
+  color: #fef3ff;
 }
 
 .item {
@@ -231,7 +218,7 @@ header .navigation .link:hover {
   transform: translateY(-50%);
   width: 40px;
   height: 40px;
-  background-color: rgba(214, 31, 187, 0.7);
+  background: rgba(214, 31, 187, 0.7);
   color: #fef3ff;
   border: none;
   cursor: pointer;
@@ -244,7 +231,6 @@ header .navigation .link:hover {
 .next-btn {
   right: 0;
 }
-
 
 .movie-cover {
   width: 200px;
@@ -343,4 +329,81 @@ header .navigation .link:hover {
     width: 30vw;
     min-width: 450px;
   }
+}
+
+.plans {
+  width: 100%;
+  height: 100vh;
+  padding: 25px;
+}
+
+.plans .section-container {
+  width: 100%;
+  background: transparent;
+}
+
+.plans .section-container {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+}
+
+.plans .section-container .plan-wrapper {
+  padding: 10px 20px;
+  display: block;
+  text-align: center;
+  background: linear-gradient(160deg, rgb(235, 47, 255) 30%, rgb(179, 14, 198) 90%);
+  border-radius: 15px;
+}
+
+.plans .section-container .plan-wrapper h3 {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 1.2rem; 
+}
+
+.plans .section-container .plan-wrapper .pricing {
+  margin-bottom: 2rem;
+}
+
+.plans .section-container .plan-wrapper .pricing .currency {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.plans .section-container .plan-wrapper .pricing .price {
+  font-size: 50px;
+  font-weight: bold;
+  color: #fef3ff;
+}
+
+
+.plans .section-container .plan-wrapper .description {
+  margin-bottom: 2rem;
+  font-size: 16px;
+  color: #fef3ff;
+  line-height: 20px;
+}
+
+.plans .section-container .plan-wrapper .subscription-btn {
+  width: 100%;
+  padding: 10px 25px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  background: #940e9a;
+  color: #fef3ff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.plans .section-container .plan-wrapper .subscription-btn:hover {
+  background: #7b117e;
 }

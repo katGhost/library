@@ -2,7 +2,7 @@ Sure, here's a simple and professional README file for the "movieWeb" project:
 movieWeb
 
 movieWeb is a simple web application that showcases a collection of trending movies. It allows users to explore various movies and view their details.
-Table of Contents
+***Table of Contents***
 
     Features
     Installation
