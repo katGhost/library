@@ -34,7 +34,9 @@ bash
 
 Usage
 
-    Upon opening the application in your web browser, you will be greeted with a carousel displaying trending movies.
+    Upon opening the application in your web browser, you will be greeted with a home page carousel displaying trending movies and information.
+
+    then only one page scroll there is a simple horizontal carousel of trending movies.
     You can scroll through the carousel using the navigation buttons (< and >).
     Click on any movie card to view more details about that movie.
 
