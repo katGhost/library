@@ -12,7 +12,7 @@ function displayAllMovies(dataSection) {
                 <img src=${item.image} alt="movie" class="movie-cover" />
                 <div class="about-movie">
                     <p>$ ${item.price}</p>
-                    <button>${item.title}</button>
+                    <button>${item.btn}</button>
                 </div>
             </article>
         `;

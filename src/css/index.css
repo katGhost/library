@@ -112,7 +112,7 @@ header {
   background-image: linear-gradient(
       to bottom right,
       rgba(15, 0, 3, 0.3) 30%,
-      rgba(71, 0, 60, 0.6) 90%
+      rgba(71, 0, 60, 0.8) 90%
     ),
     url("/src/img/movie_cover.png");
   background-position: center;
@@ -127,38 +127,114 @@ header {
   justify-content: center;
 }
 
-.banner {
-  text-align: center;
-  background: none;
-  border: none;
-  display: inline-block;
-  padding: 2rem;
+.banner-slide {
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 10%;
 }
 
-.banner-title {
-  font-size: 3.4rem;
+.banner-carousel {
+  width: 80%;
+  text-align: center;
+  background: linear-gradient(
+    to bottom right,
+    rgba(15, 0, 3, 0.1) 30%,
+    rgba(71, 0, 60, 0.01) 90%
+  );
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*padding: 1rem;*/
+}
+
+.banner-carousel .movie-thumb-img {
+  width: 800px;
+}
+
+.banner-carousel .movie-thumb-img .movie-thumb {
+  width: 100%;
+  height: 280px;
+}
+
+.banner-carousel .movie-info-container {
+  text-align: start;
+  text-wrap: wrap;
+  margin: 0 3%;
+}
+
+.banner-carousel .movie-info-container .info-title {
+  font-size: 2.4rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   color: #000000;
-  text-shadow: 0 0 3px #f668ff, 0 0 5px #eb2fff;
+  text-shadow: 0 0 3px #f668ff, 0 0 5px #fef3ff;
 }
 
-.banner-btn {
-  padding: 1rem 3rem;
+.banner-carousel .movie-info-container .availability {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.banner-carousel .movie-info-container .availability p {
+  color: #f668ff;
   text-transform: uppercase;
+  font-size: 14px;
+}
+
+.banner-carousel .movie-info-container .availability .quality,
+.banner-carousel .movie-info-container .availability .age-restrictions {
+  background: #fef3ff;
+  padding: 5px 7px;
+  border: none;
+  border-radius: 10px;
+  margin: 0 2%;
+}
+
+.banner-carousel .movie-info-container .info-description {
+  margin: 2% 0;
+  font-size: medium;
+  line-height: 22px;
+  color: #fef3ff;
+}
+
+.banner-carousel .movie-info-container .info-actions {
+  margin-top: 3%;
+  padding: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.banner-carousel .movie-info-container .info-actions .info-watch-btn {
+  padding: none;
+  text-transform: capitalize;
   letter-spacing: 1px;
   font-size: 1rem;
-  background: #d30fea;
-  color: #ffffff;
-  border: 1px solid #d30fea;
+  background: none;
+  border: none;
   transition: all 0.3s linear;
   cursor: pointer;
 }
 
-.banner-btn:hover {
-  background: transparent;
-  color: #d30fea;
+.banner-carousel .movie-info-container .info-actions .info-rent-btn {
+  padding: 0.25rem 0.75rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  background: #d30fea;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  margin: 0 3%;
+}
+
+.banner-carousel .movie-info-container .info-actions .info-rent-btn:hover {
+  background: #7b117e;
 }
 
 .items {
@@ -204,12 +280,12 @@ header {
   -webkit-overflow-scrolling: touch; /* For smooth scrolling on iOS */
 }
 
-.grid-carousel .item {
-  margin: 0 5px;
-}
-
 .grid-carousel::-webkit-scrollbar {
   display: none;
+}
+
+.grid-carousel .item {
+  margin: 0 5px;
 }
 
 .prev-btn,
@@ -235,7 +311,7 @@ header {
 
 .movie-cover {
   width: 200px;
-  height: 90%;
+  height: 85%;
   border: none;
   border-radius: 5px;
   transition: all 0.4s linear;
@@ -321,10 +397,6 @@ header {
   text-align: center;
 }
 
-.transparentBcg {
-  visibility: visible;
-}
-
 @media screen and (min-width: 768px) {
   .cart {
     width: 30vw;
@@ -357,7 +429,11 @@ header {
   padding: 10px 20px;
   display: block;
   text-align: center;
-  background: linear-gradient(160deg, rgb(235, 47, 255) 30%, rgb(179, 14, 198) 90%);
+  background: linear-gradient(
+    160deg,
+    rgb(235, 47, 255) 30%,
+    rgb(179, 14, 198) 90%
+  );
   border-radius: 15px;
   box-shadow: 20px 20px 50px rgba(235, 47, 255, 0.2);
   overflow: hidden;
@@ -368,7 +444,7 @@ header {
   font-size: 30px;
   font-weight: bold;
   text-transform: capitalize;
-  margin-bottom: 1.2rem; 
+  margin-bottom: 1.2rem;
 }
 
 .plans .section-container .plan-wrapper .pricing {
@@ -386,7 +462,6 @@ header {
   color: #fef3ff;
 }
 
-
 .plans .section-container .plan-wrapper .description {
   margin-bottom: 2rem;
   font-size: 16px;
@@ -397,6 +472,7 @@ header {
 .plans .section-container .plan-wrapper .subscription-btn {
   width: 100%;
   padding: 10px 25px;
+  margin: 0.25rem 0;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -411,3 +487,68 @@ header {
 .plans .section-container .plan-wrapper .subscription-btn:hover {
   background: #7b117e;
 }
+
+/* plans details */
+
+.plans .section-container .plan-wrapper .plan-details-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.plans
+  .section-container
+  .plan-wrapper
+  .plan-details-wrapper
+  .details-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.plans
+  .section-container
+  .plan-wrapper
+  .plan-details-wrapper
+  .details-container
+  .details {
+  text-transform: capitalize;
+  font-size: 14px;
+  text-align: center;
+}
+
+.plans
+  .section-container
+  .plan-wrapper
+  .plan-details-wrapper
+  .details-container
+  .check {
+  color: #00ff40;
+  font-size: 20px;
+}
+
+.plans
+  .section-container
+  .plan-wrapper
+  .plan-details-wrapper
+  .details-container
+  .uncheck {
+  color: #ff2323;
+  font-size: 24px;
+}
+
+/*======================================
+  HOME ANIMATIONS (CAROUSEL)
+=======================================*/
+/* animation for sliding */
+@keyframes slideAndFade {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
