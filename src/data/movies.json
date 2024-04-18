@@ -2,45 +2,69 @@
   "movies": [
     {
       "title": "The Redemption",
-      "genre": "Action",
+      "price": 30.00,
       "description": "Frank Darabont",
       "rating": 9.3,
-      "image": "./src/img/carnage.jpg"
+      "avail": "Available on premium",
+      "quality": "4k",
+      "age": "16VSNL",
+      "image": "./src/img/carnage.jpg",
+      "btn-desc": "rent"
     },
     {
       "title": " Sin City",
-      "genre": "Action-Thriller",
+      "price": 28.99,
       "description": "Frank Darabont",
       "rating": 9.2,
-      "image": "./src/img/sin_city.jpg"
+      "avail": "Available on premium",
+      "quality": "720p",
+      "age": "16VSNL",
+      "image": "./src/img/sin_city.jpg",
+      "btn-desc": "rent"
     },
     {
       "title": "Chasing Time",
-      "genre": "Thriller",
+      "price": 14.50,
       "description": "Frank Darabont",
       "rating": 7.0,
-      "image": "./src/img/cosmos.jpg"
+      "avail": "Available",
+      "quality": "4k",
+      "age": "PG-13",
+      "image": "./src/img/cosmos.jpg",
+      "btn-desc": "rent"
     },
     {
       "title": "Gorilla Island",
-      "genre": "Thriller",
+      "price": 19.00,
       "description": "Frank Darabont",
       "rating": 8.3,
-      "image": "./src/img/giant-gorilla.jpg"
+      "avail": "Available",
+      "quality": "720p",
+      "age": "PG-16L",
+      "image": "./src/img/giant-gorilla.jpg",
+      "btn-desc": "rent"
     },
     {
       "title": "Dessert Pyramids",
-      "genre": "Mystrey",
+      "price": 25.00,
       "description": "Frank Darabont",
       "rating": 9.0,
-      "image": "./src/img/pyramids.jpg"
+      "avail": "Available on premium",
+      "quality": "4K",
+      "age": "16VNL",
+      "image": "./src/img/pyramids.jpg",
+      "btn-desc": "rent"
     },
     {
       "title": "Clown Town",
-      "genre": "Drama",
+      "price": 32.99,
       "description": "Frank Darabont",
       "rating": 8.0,
-      "image": "./src/img/creepy-clown.jpg"
+      "avail": "Available",
+      "quality": "4k",
+      "age": "18+",
+      "image": "./src/img/creepy-clown.jpg",
+      "btn-desc": "rent"
     }
   ]
 }

@@ -1,9 +1,10 @@
-// index.js
-import { dataSection } from "./trend-data.js";
+import { dataSection } from "./recent-data.js";
 
-const carousel = document.querySelector('.grid-carousel');
-const prevBtn = document.querySelector('.prev-btn');
-const nextBtn = document.querySelector('.next-btn');
+//
+const carousel = document.querySelector(".grid-carousel");
+const prevBtn = document.querySelector(".prev-btn");
+const nextBtn = document.querySelector(".next-btn");
+
 
 function displayAllMovies(dataSection) {
     const displayItems = dataSection.map((item)=> {

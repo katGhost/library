@@ -84,10 +84,9 @@ class MovieItems {
 
 class UI {
   displayMovies(movies) {
-    
-    products.forEach((movie) => {
-      const carouselMoviesDOM = document.querySelector('.the-section');
-      const movieContainer = document.querySelector(".banner-slide");
+    const carouselMoviesDOM = document.querySelector('.the-section');
+    const movieContainer = document.querySelector(".banner-slide");
+    movies.forEach((movie) => {  
       //clear the container
       carouselMoviesDOM.innerHTML = '';
 
@@ -99,12 +98,12 @@ class UI {
           <div class="movie-info-container">
             <h4 class="info-title">${movie.title}</h4>
             <div class="availability">
-              <p>available on premium</p>
+              <p>${movie.avail}</p>
               <div class="quality">
-                <p>4k</p>
+                <p>${movie.quality}</p>
               </div>
               <div class="age-restrictions">
-                <p>16nvl</p>
+                <p>${movie.age}</p>
               </div>
               <div class="age-restrictions">
                 <p>${movie.rating}</p>
@@ -125,7 +124,7 @@ class UI {
                   />
                 </svg>
               </button>
-              <button class="info-rent-btn">rent</button>
+              <button class="info-rent-btn">${movie.btn-desc}</button>
             </div>
           </div>
         </div>
