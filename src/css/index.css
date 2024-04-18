@@ -7,14 +7,14 @@
 }
 
 body {
-  background: #000111;
+  background: #;
   text-decoration: none;
 }
 
 header {
   width: 100%;
   height: 20vh;
-  background: #000111;
+  background: transparent;
   position: sticky;
   top: 0;
   left: 0;
@@ -429,12 +429,10 @@ header {
   padding: 10px 20px;
   display: block;
   text-align: center;
-  background: linear-gradient(
-    160deg,
-    rgb(235, 47, 255) 30%,
-    rgb(179, 14, 198) 90%
-  );
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
+  border-top: 1.5px solid rgba(255, 255, 255, 0.2);
+  border-left: 1.5px solid rgba(255, 255, 255, 0.2);
   box-shadow: 20px 20px 50px rgba(235, 47, 255, 0.2);
   overflow: hidden;
   backdrop-filter: blur(5px);
@@ -445,6 +443,8 @@ header {
   font-weight: bold;
   text-transform: capitalize;
   margin-bottom: 1.2rem;
+  color: rgba(255, 255, 255, 0.08);
+  pointer-events: none;
 }
 
 .plans .section-container .plan-wrapper .pricing {
@@ -454,6 +454,7 @@ header {
 .plans .section-container .plan-wrapper .pricing .currency {
   font-size: 20px;
   font-weight: 600;
+  color: rgba(255, 255, 255, 0.08);
 }
 
 .plans .section-container .plan-wrapper .pricing .price {
@@ -514,6 +515,7 @@ header {
   text-transform: capitalize;
   font-size: 14px;
   text-align: center;
+  color: silver;
 }
 
 .plans
@@ -534,6 +536,14 @@ header {
   .uncheck {
   color: #ff2323;
   font-size: 24px;
+}
+
+#cursor {
+  box-shadow: 0 0 80px 80px rgba(214, 31, 187, 0.7); /* Adjust the values as needed */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /*======================================
