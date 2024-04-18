@@ -8,51 +8,66 @@ const plansCardWrapper = document.querySelectorAll(".plan-wrapper");
    DOM END
 =========================================================*/
 
+window.addEventListener('scroll', () => {
+  const header = document.querySelector('header');
+  const scrollPosition = window.scrollY;
+
+  // if (scrollPosition > 100) {
+  //   header.style.backgroundColor = "";
+  //   header.style.transform = "translateY(0%)";
+  // }
+  // else {
+  //   // Reset to default
+  //   header.style.backgroundColor = "transparent";
+  //   header.style.transform = "translateY(0%)";
+  // }
+});
+
 // Home movies display carousel
 window.addEventListener("DOMContentLoaded", () => {
-    let slideIndex = 0; // Initialize slideIndex to 0
-    let slideImageId;
-  
-    showSlides(); // Initial call to showSlides function
-  
-    // Function to control the prev and next buttons
-    function plusSlides(n) {
-      showSlides((slideIndex += n));
+  let slideIndex = 0; // Initialize slideIndex to 0
+  let slideImageId;
+
+  showSlides(); // Initial call to showSlides function
+
+  // Function to control the prev and next buttons
+  function plusSlides(n) {
+    showSlides((slideIndex += n));
+  }
+
+  // Function to set the current slide
+  function currentSlide(n) {
+    showSlides((slideIndex = n));
+  }
+
+  // Function to display slides
+  function showSlides() {
+    let i;
+    let allSlides = document.getElementsByClassName("banner-slide");
+
+    // Hide all slides
+    for (i = 0; i < allSlides.length; i++) {
+      allSlides[i].style.display = "none";
     }
-  
-    // Function to set the current slide
-    function currentSlide(n) {
-      showSlides((slideIndex = n));
+
+    // Increment slideIndex
+    slideIndex++;
+
+    // Reset slideIndex if it exceeds the number of slides
+    if (slideIndex > allSlides.length) {
+      slideIndex = 1;
     }
-  
-    // Function to display slides
-    function showSlides() {
-      let i;
-      let allSlides = document.getElementsByClassName("banner-slide");
-  
-      // Hide all slides
-      for (i = 0; i < allSlides.length; i++) {
-        allSlides[i].style.display = "none";
-      }
-  
-      // Increment slideIndex
-      slideIndex++;
-  
-      // Reset slideIndex if it exceeds the number of slides
-      if (slideIndex > allSlides.length) {
-        slideIndex = 1;
-      }
-  
-      // Display the current slide
-      allSlides[slideIndex - 1].style.display = "block";
-  
-      // Apply animation to slide from left while fading
-      allSlides[slideIndex - 1].style.animation = "slideAndFade 7s ease-out";
-    }
-  
-    // Start the carousel
-    slideImageId = setInterval(showSlides, 10000);
-  });
+
+    // Display the current slide
+    allSlides[slideIndex - 1].style.display = "block";
+
+    // Apply animation to slide from left while fading
+    allSlides[slideIndex - 1].style.animation = "slideAndFade 7s ease-out";
+  }
+
+  // Start the carousel
+  slideImageId = setInterval(showSlides, 10000);
+});
   
 
 // vanilla tilt on subscription cards
@@ -97,13 +112,7 @@ const move = (e) => {
   cursor.style.top = y - 55 + "px";
 };
 
-window.addEventListener('scroll', () => {
-  const header = document.querySelector('header');
-  const scrollPosition = window.scrollY;
 
-  if (scrollPosition > 100) {
-    header.style.backgroundColor = "#000111";
-  } else {
-    header.style.backgroundColor = "transparent"; // Reset to default
-  }
-});
+class CaraouselMovieUI {
+  
+}
