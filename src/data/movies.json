@@ -1,0 +1,46 @@
+{
+  "movies": [
+    {
+      "title": "The Redemption",
+      "genre": "Action",
+      "description": "Frank Darabont",
+      "rating": 9.3,
+      "image": "./src/img/carnage.jpg"
+    },
+    {
+      "title": " Sin City",
+      "genre": "Action-Thriller",
+      "description": "Frank Darabont",
+      "rating": 9.2,
+      "image": "./src/img/sin_city.jpg"
+    },
+    {
+      "title": "Chasing Time",
+      "genre": "Thriller",
+      "description": "Frank Darabont",
+      "rating": 7.0,
+      "image": "./src/img/cosmos.jpg"
+    },
+    {
+      "title": "Gorilla Island",
+      "genre": "Thriller",
+      "description": "Frank Darabont",
+      "rating": 8.3,
+      "image": "./src/img/giant-gorilla.jpg"
+    },
+    {
+      "title": "Dessert Pyramids",
+      "genre": "Mystrey",
+      "description": "Frank Darabont",
+      "rating": 9.0,
+      "image": "./src/img/pyramids.jpg"
+    },
+    {
+      "title": "Clown Town",
+      "genre": "Drama",
+      "description": "Frank Darabont",
+      "rating": 8.0,
+      "image": "./src/img/creepy-clown.jpg"
+    }
+  ]
+}

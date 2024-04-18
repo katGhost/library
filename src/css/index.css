@@ -7,14 +7,14 @@
 }
 
 body {
-  background: #;
+  background: #050505;
   text-decoration: none;
 }
 
 header {
   width: 100%;
-  height: 20vh;
-  background: transparent;
+  height: 15vh;
+  background: #050505;
   position: sticky;
   top: 0;
   left: 0;
@@ -59,7 +59,7 @@ header .heading .next {
 }
 
 .cart-container .input-search {
-  border: none;
+  border: 1px solid #d30fea;
   text-decoration: none;
   outline: none;
   width: 300px;
@@ -102,9 +102,9 @@ header .navigation .link:hover {
   color: #eb2fff;
 }
 
-header {
+/* header {
   box-shadow: 0 2px 4px 0 rgba(214, 31, 187, 0.3);
-}
+} */
 /* End of the header*/
 
 /* The image banner section*/
@@ -121,7 +121,7 @@ header {
   image-resolution: 100%;
   /*background: url("/src//img/popcorn.jpg") center/cover no-repeat;*/
   width: 100%;
-  min-height: calc(100vh - 20vh);
+  min-height: calc(100vh - 15vh);
   display: flex;
   align-items: center;
   justify-content: center;
